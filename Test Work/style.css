@@ -1,0 +1,319 @@
+/* ########## BEGIN of #container's and body's styles ########## */
+body{
+	font-family: Verdana, Arial;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 10pt;
+	padding-bottom: 0;
+	max-width: 520px;
+	min-width: 360px;
+	word-wrap:break-word;
+}
+#container{
+	position:relative;
+	margin: 0 auto;
+	padding: 15px;
+	padding-bottom: 0;
+}
+/* ########## END of #container and body's styles ########## */
+
+/* ########## BEGIN of styles for info about consultant (photo and status) ########## */
+#persone{
+	position: relative;
+	margin: 0 auto;
+}
+#image{
+	background: url('nika.jpeg');
+	background-position: -20px -10px;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+}
+#name{
+	font-size: 10pt;
+	position:absolute;
+	top: 0;
+	left: 115px;
+	font-weight: bold;
+}
+#name:after{
+	content:'Менеджер по продажам';
+	position:absolute;
+	top:20px;
+	left:0px;
+	font-size: 7pt;
+	color:#9f9f9f;
+	font-weight: normal;
+}
+#status{
+	background-color: #fefbc8;
+	border: 1px solid #afafaf;
+	position: absolute;
+	padding:7px;
+	padding-left: 40px;
+	top: 40px;
+	left: 75px;
+	z-index: -1;
+	font-size: 9pt;
+	border-radius: 4px;
+}
+/* ########## END of styles for info about consultant (photo and status) ########## */
+
+/* ########## BEGIN of styles for area for adding new comment ########## */
+#statistic,
+#reviewes,
+#show_reviewes,
+#comments{
+	margin: 15px
+}
+#comment_field{
+	background: #f2f2f2;
+	padding: 15px;
+	margin: 40px auto 0;
+	min-width: inherit;
+}
+#new_comment{
+	display: block;
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
+	resize: inherit;
+}
+#write_to_consultant{
+	font-size: 8pt;
+	font-weight: bold;
+	margin: 15px auto;
+	display: block;
+	align-content: center;
+	background: #fbd738;
+	text-align: center;
+	border-radius: 25px;
+	padding: 10px 40px;
+	width: 53%;
+}
+#write_to_consultant:hover{
+	transition:0.2s;
+	cursor:pointer;
+	box-shadow: #333 0 1px 3px;
+}
+#write_to_consultant:active{
+	transition:0.1s;
+	box-shadow: #111 0 1px;
+	
+}
+/* ########## END of styles for area dor adding new comment ########## */
+
+/* ########## BEGIN of styles for table of stats ########## */
+table,#statistic{
+	margin: auto;
+	margin-right: 0;
+	font-size: 9pt;
+	border-collapse: collapse;
+	max-width: 360px;
+	min-width: 340px;
+	overflow: hidden;
+}
+table span{
+	font-weight: bold;
+	display: block;
+}
+th{
+	font-size: 11pt;
+	border-top: 2px solid #f2f2f2;
+	padding-left: 0; 
+}
+
+#statistic th:before{
+	background: black;
+}
+tr>th{
+	text-align: left;
+}
+tr:first-child td{
+	border-bottom: 2px solid #f2f2f2;
+}
+#statistic td{
+	padding: 5px 0px 5px 5px;
+}
+td:last-child{
+	text-align: center;
+}
+#all{
+	line-height: 50px;
+	text-align: center;
+}
+#hand_made{
+	position: relative;
+	padding-top:10px;
+}
+#hand_made:before{
+	background-size: 10px;
+	content: '';
+	position: absolute;
+	display: block;
+	width: 210px;
+	height: 20px;
+	left:-272px;
+	top:3px;
+	border-left: 2px solid #8eba7d;
+	border-bottom-right-radius: 2px;
+	border-top-right-radius: 2px;
+	background:#b2e19b;
+	z-index: -1;
+}
+#hotels{
+	position: relative;
+	padding-bottom:10px;
+}
+#hotels:before{
+	background-size: 10px;
+	content: '';
+	position: absolute;
+	display: block;
+	width: 35px;
+	height: 20px;
+	left:-272px;
+	top:3px;
+	border-left: 2px solid #8fbccf;
+	border-bottom-right-radius: 2px;
+	border-top-right-radius: 2px;
+	background:#abe2f7;
+	z-index: -1;
+}
+#package_tours{
+	position: relative;
+}
+#package_tours:before{
+	background-size: 10px;
+	content: '';
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 20px;
+	left:-272px;
+	top:-1px;
+	border-left: 2px solid #8fbccf;
+	border-bottom-right-radius: 2px;
+	border-top-right-radius: 2px;
+	background:#abe2f7;
+	z-index: -1;
+}
+/* ########## END of styles for table of stats ########## */
+
+/* ########## BEGIN of styles for litle table with 'all reviewes' ########## */
+#reviwes{
+	border-spacing: 15px;
+	width: 600px;
+	resize: inherit;
+}
+#reviewes table td{
+	border:0;
+	font-weight: normal;
+}
+#reviewes table{
+	margin:auto 0;
+	margin-right: 10px;
+	width: inherit;
+	resize: inherit;
+}
+#reviewes table td:first-child{
+	font-weight: bold;
+	width: 140px;
+}
+#likes,#profile_comments{
+	position: relative;
+	font-weight: normal;
+	padding-right: 10px;
+	margin-right: 0;
+	text-align: right;
+}
+#likes{
+	padding-right: 13px
+}
+#likes:before{
+	background:url('blue_heart.png') center no-repeat;	
+}
+#profile_comments:before{
+	background:url('comment.png') center no-repeat;
+}
+#likes:before,#profile_comments:before{
+	background-size: 10px;
+	content: '';
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 10px;
+	left:-12px;
+	top:4px;
+}
+#show_reviewes{
+	display: block;
+	width:120px;
+}
+/* ########## END of styles for litle table with 'all reviewes' ########## */
+
+/* ########## BEGIN of styles for every comment ########## */
+.text{
+	background: #f3faff;
+	margin:10px auto;
+	padding: 10px;
+	border: 1px solid #cfd5d5;
+	position:relative;
+}
+.text:before{
+	content: '';
+	position: absolute;
+	display: block;
+	left:18px;
+	top:-8px;
+	border-bottom: 10px solid #f3faff;
+	border-left: 10px solid #f3faff;
+	border-right: 10px solid transparent;
+	border-top: 10px solid transparent;
+	z-index: 5;
+}
+.text:after{
+	content: '';
+	position: absolute;
+	display: block;
+	left:17px;
+	top:-10px;
+	border-bottom: 11px solid #cfd5d5;
+	border-left: 11px solid #cfd5d5;
+	border-right: 10px solid transparent;
+	border-top: 10px solid transparent;
+	z-index:-2;
+}
+.name{
+	font-weight: bold;
+}
+.time{
+	font-weight: normal;
+	font-size: 8pt;
+	color: #a4a4a4;
+}
+/* ########## END of styles for every comment ########## */
+
+/* ########## BEGIN of styles for screens less then 420px ################ */
+@media only screen and (max-width:420px){
+	body{
+		margin:0;
+		padding:0;
+	}
+	#container{
+		margin:0;
+		padding: 0;
+	}
+	#comment_field{
+		margin-left:0;
+		margin-right:0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	table,#statistic{
+		padding: 5px 10x;
+		margin: 5px 20px 5px 10px;
+		max-width: 345px;
+	}
+}
+/* ########## END of styles for screens less then 420px ################ */
