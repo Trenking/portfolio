@@ -1,0 +1,30 @@
+<html>
+<script>
+    
+//In future: make the test for understanding.'Math.round()' inside condition 'for loop' influence on execution speed?
+//Try to use 'Math.round()' outside from loop before loop start execute counting;
+'use strict'
+function counter(start,end){
+    if((typeof start==='number')&&(typeof end==='number')){
+        if(start>end){
+            let buf=end;
+            end=start;
+            start=buf;
+        }
+        return function(){
+            console.log('Start: '+start+'; End: '+end);
+            for(var i = Math.round(start);i<=Math.round(end);i++){
+                console.log('Tik: '+i);
+            }
+            console.log('--------------===================----------------');
+        }
+    }else{
+        console.log('Need to set 2 numbers in arguments');
+        return;
+    }
+}
+var str = 'MyTestingString'; 
+console.log(str.slice(2,8),str.substr(2,8),str.substring(2,8)); 
+</script>    
+</html>
+

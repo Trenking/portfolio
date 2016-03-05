@@ -1,0 +1,51 @@
+<html>
+<body>
+<script>
+
+function superSum2(a,b){
+    function squere(num){
+        return a*=a;
+    }
+    function cube(num){
+        return b*=b;
+    }
+    var result=squere(a)+cube(b);
+    console.log("a: "+a+' ; b: '+b+' ; superSum: '+result)
+    return {ax: result/2,
+           a1:a,
+           b1:b};
+}
+console.log('typeof "superSum2(5,3)" : '+typeof superSum2(5,3));
+console.log(superSum2(5,3));
+    
+function sumSquere(a,b){
+    return function(){
+        number=a+b
+        return number*number;
+    }
+}
+
+console.log(sumSquere(2,3)());
+console.log(sumSquere(2,3));
+function greeting(lang){
+    var word='Greeting you ';
+    if (lang==='ru'){
+        word='Privet ';
+    }else if(lang==='ua'){
+        word='Pruvit ';
+    }else if(lang==='eng'){
+        word='Hey '
+    }
+    return function(name){
+        if ((typeof name != 'string')||(name==='')){
+             name='unnamed persone';
+        }
+        return word+' '+name+'';
+    }
+}
+console.log(greeting('ru')('Igor'));
+console.log(greeting('')(''));
+console.log(greeting()(2));
+</script>
+</body>
+</html>

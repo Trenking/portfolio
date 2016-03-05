@@ -1,0 +1,66 @@
+<html>
+<body>
+
+<script>
+    
+//create object for every Mob and every 'Kick' (type of damage, number of damage, type of User who do Damage);
+    
+//var Mob = function(name,health,typeOfUnit,armor,damage,typeOfArmor,typeOfDamage,buffs,gotDamage,target){
+//    var currentDamage = 1,
+//        isUnitAlive = true;
+//    
+//    this.name=name;                         //Unic unit name;
+//    this.health=health;                     //Unit health;
+//    this.typeOfUnit=typeOfUnit;             //humanoid,deamon,animal,ghost,elemental,machine;
+//    this.armor=armor;                       //Number of clean armor;
+//    this.damage=damage;                     //Number of clean damage;
+//    this.typeOfArmor=typeOfArmor;           //none,iron,magick;
+//    this.typeOfDamagee=typeOfDamage;        //fire,cold,light,mechanichal,mistic,healing;
+//    this.target=target;                     //what is unit's target for atack now (2 parameters {name of unit:name, }
+//    this.gotDamage=function(getDamage){     
+//        
+//        
+//        return takenDamage;
+//    }
+//    
+//    
+//
+//    
+//    return {isUnitAlive:live, //is unit still alive?
+//            currentDamage:this.(,//how many damage unit give at this kick
+//           }
+//}
+//    
+//var Unit ={
+//    
+//}
+//<-------------closures------------>
+function buildHouse(fraction){
+    fraction==='human'?(
+        console.log('Hello, man! Humans waiting for your commands!')
+    ):fraction==='elves'?(
+        console.log('My lord! Elves lissening for your commands!')
+    ):fraction==='orcs'?(
+        console.log('Peace of shit! Orcs never die!')
+    ):( //if fraction is empty or wrong;
+        console.log('Chose the fraction, noob!'), fraction='unchosen'
+    );
+    return function(name){
+        fraction!=='unchosen'?
+        console.log('You building '+name+' for '+fraction+'!'):console.log('Man Chose the fraction First!');
+    }
+}
+    
+var buildForHumans=buildHouse('human');
+var buildForElves=buildHouse('elves');
+var buildForOrcs=buildHouse('orcs');
+var asd=buildHouse();
+    console.log('===============------=============');
+var buildBaracs=buildForHumans('Baracs');
+var buildTreeWarrior=buildForElves('Tree Warrior');
+var buildShamaneHouse=buildForOrcs('Shamane House');
+var asdasd=buildHouse()('asdasd');
+</script>
+
+</body>
+</html>

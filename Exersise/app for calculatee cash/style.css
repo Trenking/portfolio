@@ -1,0 +1,24 @@
+.p-elem{
+	display: block;
+	width:400px;
+	height: 150px;
+	font-size: 4em;
+	padding: 12px;
+	margin: auto;
+	background: #ecb;
+	line-height: 150px;
+	text-align: center;
+	border-radius: 18px;
+	border:6px #bce solid;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+table{
+	margin:15px auto;
+	background: #eee;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border:#ccc 2px solid;
+	font:  1.2em verdana;
+	line-height: 45px;
+}

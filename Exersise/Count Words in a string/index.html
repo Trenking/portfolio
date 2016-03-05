@@ -1,0 +1,34 @@
+<DOCTYPE>
+<html>
+<head>
+	<title>
+		Count words in a string app
+	</title>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' type='text/css' href='style.css'>
+	
+</head>
+
+<body>
+
+	<div class='container'>
+		
+			<radio id='chars'>Count Chras</radio>
+			<label>Write a String to Count</label>
+			<input type='text' id='textField' onKeyDown='charCount(this)'> left: <input type='text' id='count' placeholder='1000'></input>
+			<label id='date' placeholder=''></label>
+
+			<script>
+			document.getElementById('date').innerHTML=new Date(2010,0,1);
+			function charCount(el){
+				document.getElementById('count').value=999-el.value.length;
+
+			}
+				
+
+			</script>
+		
+	</div>	
+</body>
+
+</html>

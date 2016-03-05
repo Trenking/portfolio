@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Using Constructor</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+	Check Console
+	<script>
+		var Persone = function(age,name,surname){
+			this.age=age;
+			this.name=name;
+			this.surname=surname;
+
+			this.greeting=function(){
+				console.log('Hello'+name);
+			}			
+		}
+
+		var ghost = new Persone(202,'Ktulhu','Petrov');
+		//somethink like inheriting in patrik from ghost constructor
+		var patrik = new ghost.constructor(15,'Patrik','Jane');
+		patrik.greeting();
+		console.log(patrik.age);
+	</script>
+</body>
+</html>
