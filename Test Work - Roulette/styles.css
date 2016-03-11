@@ -1,0 +1,32 @@
+#container{
+    margin: 20px auto;
+    background: #abc;
+    width: 400px;
+    padding: 10px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+canvas{
+    border:2px solid #eee;
+    border-radius: 2px;
+    margin: 15px auto;
+}
+#button{
+    background: #ddd;
+    height: 100px;
+    width: 100px;
+    margin: 5px auto;
+    line-height: 100px;
+    border: 2px solid #000;
+}
+#button:hover{
+    cursor: pointer;
+    border: 2px solid #eee;
+    transition: 0.3s;
+}
+#button:active{
+    border: 2px solid #abc;
+}
