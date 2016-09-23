@@ -7,4 +7,4 @@ Here you can find chunks of my code from different programs/apps or some finishe
 
 Thank you for attention.
 
-Not all files consist finished works, some of them is  just training of writing in JS.
+Note: Not all folders include finished works.
