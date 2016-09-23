@@ -1,0 +1,206 @@
+.page_name{
+    padding: 15px 90px;
+    font-weight: bold;
+    font-size: 21px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 15px;
+}
+.items_in_bag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 65px;
+}
+    .items_in_bag>*{
+        width: 50%;
+        height: 420px;
+    }
+    .itemBox{
+        margin: 0 auto;
+        display: flex;
+    }
+        .photo_wraper{
+            height: 100%;
+            width: 230px;
+            text-align: center;
+            overflow: hidden;
+        }
+            .item_photo{
+                position: relative;
+/*                left: -110px;*/
+                height: 340px;
+    
+                cursor: pointer;
+            }
+            .item_price{
+                margin-top: 25px;
+                text-align: center;
+                font-size: 15px;
+            }
+            .item_price:before{
+                content: '£';
+            }
+        .description_wrap{
+            flex: 1;
+        }
+            .description_wrap p{
+                padding-left: 25px;
+            }
+            .item_name{
+                font-weight: bold;
+                font-size: 15px;
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+            .item_color,.item_size,
+            .item_quantity{
+                margin: 5px;
+                margin-left: 0;
+                font-size: 12px;
+            }
+        .remove_item{
+            color: #f14a58;
+            font-weight: bold;
+            font-size: 13px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .remove_item:hover{
+            color:red;
+        }
+.message{
+    background: #f7f7f7;
+    border-top: 1px solid #e5e5e5;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.actions{
+    display: flex;
+}
+    .actions>*{
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        
+    }
+        .actions>*:nth-child(1){
+            text-align: left;
+            margin-left: 50px;
+        }
+        .actions>*:nth-child(2){
+            flex: 2;
+        }
+        .actions span{
+            display: inline-block;
+        } 
+        .empty_bag,.total_cost{
+            font-weight: bold;
+        }
+        .empty_bag{
+            margin: 100px 0;
+        }
+        .actions>*:nth-child(3){
+            margin: 80px 50px 0 0;
+            text-align: right;
+        }
+        .empty_bag{
+            cursor: pointer;
+        }
+        .empty_bag:hover{
+            color: #f14a58;
+        }
+        .total_cost{
+            font-size: 22px;
+        }
+/*new*/
+.del_confirm{
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    height: 200px;
+    width: 350px;
+    left:35%;
+    top: 20%;
+    background: #e5e5e5;
+    border: 5px solid #555;
+    border-radius: 10px;
+}
+.del_but,
+.dont_del{
+    width: 80%;
+    height: 25%;
+    margin: 10px auto;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.del_but{
+    background: #e5e;
+}
+.dont_del{
+    background: #1ee;
+
+}
+
+/*new*/
+/*++++++++++++++++++++++++TABLET STYLES+++++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 1024px){
+    .actions span{
+/*        line-height: 100px;*/
+    } 
+}
+/*++++++++++++++++++++++++MOBILE STYLES++++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 480px){
+    .big_button{
+        padding: 17px 25px;
+    }
+    .page_name{
+        margin-top: 12vh;
+        border-top: none;
+        padding: 15px 30px;
+    }
+    .items_in_bag{
+        padding: 30px 15px;
+    }
+    .items_in_bag>*{
+        width: 100%;
+        height: 350px;
+    }
+    .photo_wraper{
+        height: 100%;
+        width: 200px;
+        overflow: hidden;
+    }
+    .item_photo{
+        position: relative;
+/*        left: -110px;*/
+        height: 290px;
+        cursor: pointer;
+    }
+    .item_price{
+        margin-top: 6px;
+        text-align: center;
+        font-size: 17px;
+    }
+    /*ACTIONS*/
+    .empty_bag{
+        font-size: 13px;
+    }
+    .total_cost{
+        font-size: 15px;
+    }
+    .empty_bag{
+        margin: 70px 0;
+    }
+    .actions>*:nth-child(3){
+        margin: 60px 10px;
+        font-size: 12px;
+    }
+    .actions>*:nth-child(1){
+        margin-left: 10px;
+    }
+}

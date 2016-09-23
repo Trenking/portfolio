@@ -1,0 +1,200 @@
+/*========================CAROUSEL============================*/
+#slider{
+    height: 850px;
+    margin-top: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+    #carousel{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+        .slider_element{
+            background-size: cover;
+            background-position: center;
+            transition: all 0.4s ease;
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+            #carousel>.elem1{
+                background-image: url(../img/start/slider/sl1.png);
+                bottom: 0%;
+            }
+            #carousel>.elem2{
+                background-image: url(../img/start/slider/sl2.png);
+                bottom: 100%;
+            }
+            #carousel>.elem3{
+                background-image: url(../img/start/slider/sl3.png);
+                bottom: 200%;
+            }
+            #carousel>.elem4{
+                background: #444;
+                bottom: 300%;
+            }
+    .checkers{
+        width: 100%;
+        height: 80px;
+        border-top: 1px solid rgba(190,190,190,0.25);
+        position: relative;
+        bottom: 80px;
+        text-align: center;
+    }
+        .checkers span{
+            height: 6px;
+            width: 6px;
+            display: inline-block;
+            border-radius: 50%;
+            cursor: pointer;
+            background: rgba(200,200,200,.8);
+            margin: 35px 20px 0 0;
+        }
+        .checkers .current_slide{
+            background: #f14a58 !important;
+        }
+/*========================BANNERS=============================*/
+.banners{
+    height: 390px;
+    display: flex;
+}
+.banners>*{
+    height: 100%;
+    flex: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #e5e5e5;
+    background-position: center;
+}
+    .banners>.left{
+        border-right: 1px solid #e5e5e5;
+        background-image: url(../img/start/banners/banner-left.png);
+        
+    }
+    .banners>.right{
+        background-image: url(../img/start/banners/banner-right.png);
+    }
+/*======================NEW_ARRIVALS==========================*/
+.new_arrivals{
+    text-align: center;
+    height:990px;
+}
+    .new_arrivals>h2{
+        margin: 120px auto 80px;
+        font-size: 55px;
+    }
+    .arr_items{
+        display: flex;
+        font-size: 14px;
+        justify-content: space-around;
+    }
+    .arr_items>*{
+        flex-basis: 240px;
+    }
+       .ar_item>.photo{
+           border: 2px solid white;
+           display: block;
+            height: 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .ar_item>.name{
+            padding:  35px 20px 0 20px;
+            font-weight: bold;
+        }
+        .ar_item>.price{
+            position: relative;
+        }
+        .ar_item>.price:before{
+            content: '£';
+            position: relative;
+        }
+            .ar_item_0>.photo{
+                background-image: url(../img/start/new_arrivals/1-photo.png);
+            }
+            .ar_item_1>.photo{
+                background-image: url(../img/start/new_arrivals/2-photo.png);
+            }
+            .ar_item_2>.photo{
+                background-image: url(../img/start/new_arrivals/3-photo.png);
+            }
+            .ar_item_3>.photo{
+                background-image: url(../img/start/new_arrivals/4-photo.png);
+            }
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++TABLET STYLES+++++++++++++++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 1024px){
+     #slider{
+        height: 820px;
+    }
+    /*BANNERS----------------------------------------------*/
+    .banners{
+        height: 250px;
+    }
+    .banners>.left{
+        flex: 66%;
+    }
+    .banners>.right{
+        flex: 33%;
+        background-image: url('../img/start/banners/banner-right-768.png');
+    }
+    /*NEW ARRIVALS-------------------------------------------------*/
+    .new_arrivals{
+        height:900px;
+    }
+    .new_arrivals>h2{
+        margin: 80px auto;
+        font-size: 45px;
+    }
+    .arr_items>*{
+        flex-basis: 180px;
+    }
+    .ar_item>.photo{
+        height: 290px;
+    }
+     .ar_item_3{
+        display: none;
+    }
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++MOBILE STYLES+++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 480px){
+     #slider{
+        height: 530px;
+         margin-top: 12vh;
+    }
+     .checkers{
+        height: 50px;
+        bottom: 50px;
+    }
+    .checkers span{
+        margin-top: 20px;
+    }
+    /*BANNERS----------------------------------------------*/
+    .banners>.right{
+        display: none;
+    }
+    /*NEW ARRIVALS-------------------------------------------------*/
+    .new_arrivals{
+        height: 670px;
+    }
+    .new_arrivals>h2{
+        margin: 30px auto 40px;
+        font-size: 30px;
+    }
+    .arr_items>*{
+        font-size: 12px;
+        flex-basis: 160px;
+    }
+    .ar_item>.photo{
+        height: 220px;
+    }
+    .ar_item>.name{
+        padding:  20px 10px 0 10px;
+        font-weight: bold;
+    }
+    .ar_item_2{
+        display: none;
+    }
+}
