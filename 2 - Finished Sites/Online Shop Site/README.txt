@@ -1,0 +1,1 @@
+Check the "task description" folder for read the main tasks pf this project.

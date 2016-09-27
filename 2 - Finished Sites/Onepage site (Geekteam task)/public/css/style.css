@@ -1,0 +1,287 @@
+@import "https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto:300,300i,400,500,700,900";
+body, header .header-contacts, main, main .gallery .photo-wrapper, main .contact-form, footer .footer-contacts {
+  display: flex;
+  flex-wrap: wrap; }
+
+header, header nav, footer {
+  display: flex;
+  flex-wrap: nowrap; }
+
+header .header-logo a, header nav > * a, main .reviews-review-list-elem, main .gallery .photo-wrapper .gallery-photo, main .contact-form input[type='button'], footer .footer-logo a {
+  cursor: pointer; }
+
+header nav > * a, main .gallery .photo-wrapper .gallery-photo, main .contact-form input[type='button'] {
+  transition: 0.2s ease; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+  body > * {
+    width: 100%; }
+
+.section-name {
+  color: #595959;
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+  text-transform: uppercase; }
+
+header {
+  background: #96db4c;
+  box-shadow: 2px 0 3px black;
+  height: 65px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  z-index: 1; }
+  header .header-logo a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-basis: 150px;
+    flex-shrink: 1;
+    font-size: 20px;
+    line-height: 65px; }
+    header .header-logo a .your {
+      color: black; }
+    header .header-logo a .company {
+      color: white; }
+  header nav {
+    color: white;
+    flex-grow: 0.4;
+    flex-shrink: 0;
+    font-family: 'Roboto';
+    justify-content: center;
+    max-width: 600px; }
+    header nav > * {
+      flex-grow: 0.1;
+      flex-shrink: 0;
+      line-height: 65px;
+      margin: 0;
+      padding: 0; }
+      header nav > * a:hover {
+        color: black; }
+    header nav :nth-child(1) {
+      flex-basis: 80px; }
+    header nav :nth-child(2) {
+      flex-basis: 100px; }
+    header nav :nth-child(3) {
+      flex-basis: 60px; }
+    header nav :nth-child(4) {
+      flex-basis: 100px; }
+  header .header-contacts {
+    align-content: center;
+    flex-basis: 150px;
+    flex-shrink: 1; }
+    header .header-contacts .phone {
+      color: white;
+      font-size: 12px;
+      height: 25%;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+
+main {
+  margin-top: 65px; }
+  main > * {
+    width: 100%; }
+  main .start_page {
+    background: url(../img/start-page-bg.png) no-repeat;
+    background-size: cover;
+    color: white;
+    height: 700px;
+    margin: 0;
+    text-align: center; }
+    main .start_page-slogan {
+      font-family: 'Roboto';
+      font-size: 58px;
+      font-weight: 900;
+      margin: 180px auto 10px;
+      max-width: 700px;
+      position: relative;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px black; }
+      main .start_page-slogan:after {
+        background: white;
+        bottom: -20px;
+        content: '';
+        height: 3px;
+        left: 43%;
+        position: absolute;
+        width: 80px; }
+    main .start_page-description {
+      font-size: 15px;
+      margin: 45px auto;
+      max-width: 600px;
+      text-shadow: 0 0 3px black; }
+  main .reviews {
+    height: 650px;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center; }
+    main .reviews-review {
+      height: 100%; }
+      main .reviews-review-photo {
+        background: url(../img/review-sara.png) center no-repeat;
+        height: 200px;
+        margin: auto;
+        width: 200px; }
+      main .reviews-review-name {
+        color: #96db4c;
+        font-size: 35px;
+        margin: 30px auto 50px;
+        position: relative; }
+        main .reviews-review-name:after {
+          background: #2f4c0f;
+          bottom: -35px;
+          content: '';
+          height: 4px;
+          left: 40%;
+          position: absolute;
+          width: 90px; }
+      main .reviews-review-text {
+        font-size: 18px;
+        font-weight: 200;
+        margin-top: 65px; }
+      main .reviews-review-list {
+        left: -30%;
+        position: absolute;
+        top: 30%; }
+        main .reviews-review-list-elem {
+          border: 2px solid #96db4c;
+          border-radius: 50%;
+          height: 30px;
+          margin-bottom: 60px;
+          position: relative;
+          width: 30px; }
+          main .reviews-review-list-elem:not(:last-child):after {
+            background: #dddddd;
+            bottom: -64px;
+            content: '';
+            height: 62px;
+            left: 48%;
+            position: absolute;
+            width: 2px;
+            z-index: -1; }
+        main .reviews-review-list .active {
+          background: #96db4c;
+          border: 5px solid #96db4c;
+          box-shadow: inset 0 0 0 3px white; }
+  main .gallery .photo-wrapper {
+    justify-content: center;
+    max-width: 1600px;
+    margin: auto; }
+    main .gallery .photo-wrapper .gallery-photo {
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: 120%;
+      border: 5px solid white;
+      flex-basis: 390px;
+      height: 270px; }
+      main .gallery .photo-wrapper .gallery-photo:hover {
+        background-size: 150%; }
+    main .gallery .photo-wrapper .elem1 {
+      background-image: url(../img/galery-001.png); }
+    main .gallery .photo-wrapper .elem2 {
+      background-image: url(../img/galery-002.png); }
+    main .gallery .photo-wrapper .elem3 {
+      background-image: url(../img/galery-003.png); }
+    main .gallery .photo-wrapper .elem4 {
+      background-image: url(../img/galery-004.png); }
+    main .gallery .photo-wrapper .elem5 {
+      background-image: url(../img/galery-005.png); }
+    main .gallery .photo-wrapper .elem6 {
+      background-image: url(../img/galery-006.png); }
+    main .gallery .photo-wrapper .elem7 {
+      background-image: url(../img/galery-007.png); }
+    main .gallery .photo-wrapper .elem8 {
+      background-image: url(../img/galery-008.png); }
+  main .contact {
+    height: 350px;
+    background: url(../img/grass.png) repeat-x;
+    background-position: bottom;
+    background-size: contain; }
+    main .contact-form {
+      justify-content: center; }
+      main .contact-form input[type='text'] {
+        border: 1px solid black;
+        flex-basis: 200px;
+        height: 50px;
+        margin: 5px;
+        padding: 5px; }
+        main .contact-form input[type='text']::-webkit-input-placeholder {
+          color: #333;
+          font-family: "Roboto";
+          font-style: italic;
+          font-syze: 13px; }
+        main .contact-form input[type='text']::-moz-placeholder {
+          color: #333;
+          font-family: "Roboto";
+          font-style: italic;
+          font-syze: 13px; }
+        main .contact-form input[type='text']:-moz-placeholder {
+          color: #333;
+          font-family: "Roboto";
+          font-style: italic;
+          font-syze: 13px; }
+        main .contact-form input[type='text']:-ms-input-placeholder {
+          color: #333;
+          font-family: "Roboto";
+          font-style: italic;
+          font-syze: 13px; }
+      main .contact-form input[type='button'] {
+        background: #96db4c;
+        border: none;
+        color: white;
+        flex-basis: 170px;
+        height: 50px;
+        margin: 5px;
+        outline: none; }
+        main .contact-form input[type='button']:active {
+          background: #70b625;
+          color: black; }
+
+footer {
+  background-image: url(../img/footer-bg.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+  color: white;
+  height: 120px;
+  justify-content: center;
+  margin-top: -3px; }
+  footer .footer-logo {
+    line-height: 120px; }
+    footer .footer-logo a {
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      flex-basis: 150px;
+      flex-shrink: 1;
+      font-size: 20px; }
+      footer .footer-logo a .your {
+        color: #96db4c; }
+      footer .footer-logo a .company {
+        color: white; }
+  footer .empty-space {
+    flex-grow: 0.4;
+    flex-shrink: 1;
+    width: 100px; }
+  footer .footer-contacts {
+    align-content: center;
+    flex-basis: 150px;
+    flex-shrink: 1; }
+    footer .footer-contacts .phone {
+      color: white;
+      font-size: 15px;
+      height: 15%;
+      margin: 0;
+      width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
